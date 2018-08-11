@@ -1,0 +1,54 @@
+html, body{
+    height: 100%;
+    /*width: 100%;*/
+}
+
+.innerContent{
+    display: flex;
+}
+.contain {
+    height: 100vh;
+    /*display: table;*/
+    width: available;
+    color: green;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 10%;
+}
+
+.header {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+
+.content{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.stripe {
+    height: 2px;
+    width: auto;
+}
+
+
+.pink {
+    background: linear-gradient(to right, deeppink 0%, coral 100%);
+
+}
+
+.teal {
+    background: linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%);
+
+}
+
+.tomato {
+    background: linear-gradient(to right, tomato 0%, gold 100%);
+
+}
+
+.purple {
+    background: linear-gradient(to right, #9966ff, #6699ff);
+}
