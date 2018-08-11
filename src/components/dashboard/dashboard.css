@@ -3,18 +3,12 @@ html, body {
     font-size: 30px;
 }
 
-.bigContainer {
-    background: linear-gradient(#00B4DB,#0083B0);
+.bigContainer-dashboard {
+    background: linear-gradient(to right, #00B4DB,#0083B0);
     height: 100vh;
     color: white;
-    padding-top: 10%;
 }
 
-hr.style-two {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(255,255,255, 0), rgba(255,255,255, 0.75), rgba(255,255,255, 0));
-}
 
 .greeter {
     font-size: 80px;
@@ -33,9 +27,11 @@ span {
     color: #b2d9e7;
 }
 
-.option {
+.option-dashboard {
     text-align: center;
 }
+
+
 
 .dashboard-row {
     margin-top: 70px;

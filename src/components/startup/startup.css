@@ -30,7 +30,7 @@ html, body{
     height: 100vh;
 
     text-align: center;
-    padding-top: 10%;
+    padding-top: 15%;
     align-content: center;
     justify-content: center;
 
@@ -49,6 +49,14 @@ html, body{
     text-align: center;
 }
 
+.custom-nav {
+    background-color: #f1f1f1 !important;
+}
+
+.custom-nav-brand {
+    font-weight: 800;
+    color: #636363 !important;
+}
 
 .pink {
     background: linear-gradient(to right, deeppink 0%, coral 100%);
@@ -71,10 +79,4 @@ html, body{
 
 .green {
     background: linear-gradient(to right, #9FFF33, #33FFCE);
-}
-
-hr.style-two {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(255,255,255, 0), rgba(255,255,255, 0.75), rgba(255,255,255, 0));
 }

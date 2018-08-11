@@ -8,7 +8,8 @@ const Page = ({iconClass, offset, imageUrl, heading, description, gradient }) =>
             <p className="header">{heading}</p>
             <hr className="style-two"/>
             <div className="innerContent">
-                <i className={`icon-startup ${iconClass}`}></i>
+
+                <i className={`icon-startup ${iconClass}`}/>
 
 
                 <p className="content">{description}</p>
@@ -23,13 +24,28 @@ class Startup extends Component {
         console.log(content);
         return (
             <div>
-                <Page iconClass="fas fa-piggy-bank" gradient="pink" heading={content.welcomeHead} description={content.welcomeCont} />
-                <Page iconClass="far fa-credit-card" gradient="teal" heading={content.creditHead} description={content.creditCont} />
-                <Page iconClass="fas fa-money-bill-wave" gradient="tomato" heading={content.transferHead} description={content.transferCont}/>
-                <Page iconClass="fas fa-wallet" gradient="purple" heading={content.walletHead} description={content.walletCont} />
+                <nav className="custom-nav navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                    <a className="navbar-brand custom-nav-brand" href="#">DBank</a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                        </ul>
+                        <button className="btn btn-outline-success my-2 my-sm-0 linkTransform" type="submit">Login</button>
+                    </div>
+                </nav>
+
+
+                <Page iconClass="fas fa-piggy-bank" gradient="teal" heading={content.welcomeHead} description={content.welcomeCont} />
+                <Page iconClass="far fa-credit-card" gradient="tomato" heading={content.creditHead} description={content.creditCont} />
+                <Page iconClass="fas fa-money-bill-wave" gradient="purple" heading={content.transferHead} description={content.transferCont}/>
                 <div className="contain green">
                     <div className="container">
-                        <button type="button" className="custom-btn btn btn-primary">Get Started!</button>
+                        <button type="button" className="linkTransform custom-btn btn btn-primary">Get Started!</button>
                     </div>
                 </div>
             </div>
