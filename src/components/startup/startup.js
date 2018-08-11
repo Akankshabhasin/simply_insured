@@ -6,10 +6,10 @@ const Page = ({iconClass, offset, imageUrl, heading, description, gradient }) =>
     <div className={`contain ${gradient}`}>
         <div className="container">
             <p className="header">{heading}</p>
-
+            <hr className="style-two"/>
             <div className="innerContent">
                 <i className={`iconify ${iconClass}`}></i>
-                <span className={`stripe ${gradient}`} />
+
 
                 <p className="content">{description}</p>
 
@@ -29,7 +29,7 @@ class Startup extends Component {
                 <Page iconClass="fas fa-wallet" gradient="purple" heading={content.walletHead} description={content.walletCont} />
                 <div className="contain green">
                     <div className="container">
-                        <button type="button" className="btn btn-primary">Get Started!</button>
+                        <button type="button" className="custom-btn btn btn-primary">Get Started!</button>
                     </div>
                 </div>
             </div>
