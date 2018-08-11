@@ -1,7 +1,7 @@
 export default {
 
-    welcomeCont:"A simple app that allows you to manage credit and pay people effortlessly.",
-    welcomeHead:"Welcome to the De-centralized Bank",
+    welcomeCont:"Welcome to a secure and highly simplified de-centralized bank. With our deeply intuitive yet enormously robust app allows you to manage your ether and avail facility of credit, effortlessly.",
+    welcomeHead:"The DBank",
 
     creditCont:"Love credit cards? Want to use crypto but at the same time improve your credit history? Let's tell you some good news: You can now easily do that with DBANK. We report your transaction details to the government. So, you can now reap the dual benefits of cryptocurrency and great credit score! Now, that's something",
     creditHead:"Credit",

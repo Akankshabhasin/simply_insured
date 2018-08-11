@@ -6,21 +6,40 @@ html, body{
 .innerContent{
     display: flex;
 }
+
+.btn-primary {
+    width: 550px;
+    height: 250px;
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 80px;
+    border: 0px solid transparent;
+    border-radius: 60px;
+}
+
+.btn-primary:hover {
+    background-color: rgba(51, 255, 240, 0.6);
+}
+.iconify {
+    font-size: 150px;
+    color: #ECECEC;
+    border-right: 70px solid transparent;
+}
 .contain {
     height: 100vh;
-    /*display: table;*/
-    width: available;
-    color: green;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    padding-left: 50px;
     padding-top: 10%;
+    align-content: center;
+    justify-content: center;
+
 }
 
 .header {
     font-size: 60px;
     color: white;
     font-weight: bold;
+    border-bottom: 80px solid transparent;
 }
 
 .content{
@@ -51,4 +70,8 @@ html, body{
 
 .purple {
     background: linear-gradient(to right, #9966ff, #6699ff);
+}
+
+.green {
+    background: linear-gradient(to right, #9FFF33, #33FFCE);
 }
