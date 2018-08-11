@@ -33,13 +33,16 @@ class Dashboard extends Component{
                     <p> <span> Wallet: </span>{"23 ETH"} </p>
                     <p> <span> Credit: </span>{"9"} out of {"60"} ETH Used</p>
 
-                    <div className="row">
-                        <div className="col-sm-12 col-md-6">
-                            <img src="card.svg" alt="Credit"/>
+                    <div className="dashboard-row row">
+                        <div className="option col-sm-12 col-md-6">
+                            <i className="icon-dashboard far fa-credit-card"></i>
+                            <br/>
+                            Manage your credit
                         </div>
-                        <div className="col-sm-12 col-md-6">
+                        <div className="option col-sm-12 col-md-6">
                             <i className="icon-dashboard fas fa-money-bill-wave-alt"></i>
-                            Transfer <br/>
+                            <br/>
+                            Send/Receive Money
                         </div>
                     </div>
                 </div>

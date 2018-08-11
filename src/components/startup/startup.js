@@ -8,7 +8,7 @@ const Page = ({iconClass, offset, imageUrl, heading, description, gradient }) =>
             <p className="header">{heading}</p>
             <hr className="style-two"/>
             <div className="innerContent">
-                <i className={`iconify ${iconClass}`}></i>
+                <i className={`icon-startup ${iconClass}`}></i>
 
 
                 <p className="content">{description}</p>
