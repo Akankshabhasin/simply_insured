@@ -36,21 +36,12 @@ span {
 	text-align: center;
 }
 
-.dashboard-row {
+.transfer-row {
 	margin-top: 70px;
 }
 
 .margined {
 	margin: 50px 0;
-}
-
-.getValue{
-	visibility: hidden;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
 }
 
 .custom-nav {
@@ -62,7 +53,14 @@ span {
 	color: #636363 !important;
 }
 
-.custom-btn {
+.custom-btn-transfer {
 	background-color: #1abc51;
+	color: white;
 	border: none;
+}
+
+.custom-btn-transfer:hover {
+    background-color: #18ad4a;
+    color: white;
+    border: none;
 }

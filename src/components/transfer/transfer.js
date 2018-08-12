@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import './transfer.css'
 
+import Error from '../error/error'
+import { Link} from "react-router-dom";
+
 class Transfer extends Component{
     constructor(props){
         super(props);
@@ -22,7 +25,8 @@ class Transfer extends Component{
         this.calcPadding();
     };
     render(){
-        return (
+        return !this.props.getLogged()?  <Error/>
+        :(
             <div className="bigContainer-transfer" style={{paddingTop: this.state.padd}}>
                 <nav className="custom-nav navbar fixed-top navbar-expand-lg navbar-light bg-light">
                     <a className="navbar-brand custom-nav-brand" href="#">DBank</a>
@@ -34,20 +38,27 @@ class Transfer extends Component{
 
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li className="nav-item ">
-                                <a className="nav-link" href="#">Dashboard</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Credit</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" href="#">Transfer</a>
-                            </li>
+                            <Link to="Dashboard">
+                                <li className="nav-item active">
+                                    <a className="nav-link" href="#">Dashboard</a>
+                                </li>
+                            </Link>
+                            <Link to="Credit">
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">Credit</a>
+                                </li>
+                            </Link>
+                            <Link to="Transfer">
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">Transfer</a>
+                                </li>
+                            </Link>
                         </ul>
-                        <button className="btn btn-outline-success my-2 my-sm-0 linkTransform" type="submit">Logout</button>
+                        <Link to="/">
+                            <button onClick={this.props.logOut} className="btn btn-outline-success my-2 my-sm-0 linkTransform" type="submit">Logout</button>
+                        </Link>
                     </div>
                 </nav>
-
                 <div className="container">
                     <h1 className="display-4 heading-transfer">SEND / RECEIVE</h1>
 
@@ -61,21 +72,9 @@ class Transfer extends Component{
                             <div className="col">
                                 <input type="text" className="form-control" placeholder="Amount"/>
                             </div>
-                            <button className="linkTransform custom-btn btn btn-warning">Submit</button>
+                            <button className="linkTransform custom-btn-transfer btn btn-warning">Submit</button>
                         </div>
                     </form>
-
-                    {/*<form>*/}
-                        {/*<div className="row">*/}
-                            {/*<div className="col-xs-2">*/}
-                                {/*<input type="text" className="custom-form form-control" placeholder="Enter the hash"/>*/}
-                            {/*</div>*/}
-                            {/*<div className="col-xs-2">*/}
-                                {/*<input type="text" className="custom-form form-control" placeholder="Amount"/>*/}
-                            {/*</div>*/}
-                                {/*<button type="submit" className=" button-a btn btn-primary">Submit</button>*/}
-                        {/*</div>*/}
-                    {/*</form>*/}
                 </div>
             </div>
         )

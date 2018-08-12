@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import './dashboard.css'
 
+import Error from '../error/error'
+import { Link} from "react-router-dom";
 
 class Dashboard extends Component{
     constructor(props){
@@ -38,7 +40,9 @@ class Dashboard extends Component{
         this.calcPadding();
     };
     render(){
-        return (
+
+        return !this.props.getLogged()?  <Error/>
+            :(
             <div className="bigContainer-dashboard" style={{paddingTop: this.state.padd}}>
                 <nav className="custom-nav navbar fixed-top navbar-expand-lg navbar-light bg-light">
                     <a className="navbar-brand custom-nav-brand" href="#">DBank</a>
@@ -50,17 +54,25 @@ class Dashboard extends Component{
 
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li className="nav-item ">
-                                <a className="nav-link active" href="#">Dashboard</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Credit</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Transfer</a>
-                            </li>
+                            <Link to="Dashboard">
+                                <li className="nav-item active">
+                                    <a className="nav-link" href="#">Dashboard</a>
+                                </li>
+                            </Link>
+                            <Link to="Credit">
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">Credit</a>
+                                </li>
+                            </Link>
+                            <Link to="Transfer">
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">Transfer</a>
+                                </li>
+                            </Link>
                         </ul>
-                        <button className="btn btn-outline-success my-2 my-sm-0 linkTransform" type="submit">Logout</button>
+                        <Link to="/">
+                            <button onClick={this.props.logOut} className="btn btn-outline-success my-2 my-sm-0 linkTransform" type="submit">Logout</button>
+                        </Link>
                     </div>
                 </nav>
 
@@ -70,8 +82,8 @@ class Dashboard extends Component{
                     <hr className="style-two"/>
 
                     <p> Here's a quick look: </p>
-                    <p> <span> Wallet: </span>{"23 ETH"} </p>
-                    <p> <span> Credit: </span>{"9"} out of {"60"} ETH Used</p>
+                    <p> <span className="category-transfer"> Wallet: </span>{"23 ETH"} </p>
+                    <p> <span className="category-transfer"> Credit: </span>{"9"} out of {"60"} ETH Used</p>
 
                     <div className="dashboard-row row">
                         <div className="option-dashboard col-sm-12 col-md-6">

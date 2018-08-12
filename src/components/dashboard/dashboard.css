@@ -16,7 +16,7 @@ html, body {
     color: #f9f9f9;
 }
 
-span {
+.category-transfer {
     font-weight: bold;
     font-size: 1.2rem;
     color: #E0F7FA;

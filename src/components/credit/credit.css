@@ -21,7 +21,7 @@ h2 {
     font-size: 50px;
     font-weight: bolder;
 }
-span {
+.category-credit {
     font-weight: bold;
     font-size: 1.2rem;
     color: #fbecd9;
@@ -36,7 +36,7 @@ span {
     text-align: center;
 }
 
-.dashboard-row {
+.credit-row {
     margin-top: 70px;
 }
 
@@ -60,4 +60,16 @@ span {
 .custom-nav-brand {
     font-weight: 800;
     color: #636363 !important;
+}
+
+.custom-btn-credit {
+    background-color: #1abc51;
+    color: white;
+    border: none;
+}
+
+.custom-btn-credit:hover {
+    background-color: #18ad4a;
+    color: white;
+    border: none;
 }
