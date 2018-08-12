@@ -17,16 +17,15 @@ Each user's account possess a credit limit, credit score and credit balance. The
 1 extra ETHER monthly.
 
 ## Preview
+
 Landing Page
-![Landing](https://raw.githubusercontent.com/tranoidityFluidment/simply_insured/blob/Contracts/public/media/preview/Main.png)
+![Landing](https://github.com/tranoidityFluidment/simply_insured/blob/Contracts/public/media/preview/Main.png)
 
 Dashboard
-![Dashboard](https://raw.githubusercontent.com/tranoidityFluidment/simply_insured/blob/Contracts/public/media/preview/Dashboard.png)
+![Dashboard](https://github.com/tranoidityFluidment/simply_insured/blob/Contracts/public/media/preview/Dashboard.png)
 
 Credit Status
-![Credit](https://raw.githubusercontent.com/tranoidityFluidment/simply_insured/blob/Contracts/public/media/preview/Credit.png)
+![Credit](https://github.com/tranoidityFluidment/simply_insured/blob/Contracts/public/media/preview/Credit.png)
 
 Transfer Money
-![Transfer](https://raw.githubusercontent.com/tranoidityFluidment/simply_insured/blob/Contracts/public/media/preview/Transfer.png)
-
-
+![Transfer](https://github.com/tranoidityFluidment/simply_insured/blob/Contracts/public/media/preview/Transfer.png)
