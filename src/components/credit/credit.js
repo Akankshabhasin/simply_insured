@@ -86,7 +86,7 @@ class Credit extends Component{
                                 <div className="col">
                                     <input type="text" className="form-control" placeholder="Amount"/>
                                 </div>
-                                <button className="btn btn-warning">Submit</button>
+                                <button className="linkTransform btn btn-warning">Submit</button>
                             </div>
                         </form>
                     </div>
