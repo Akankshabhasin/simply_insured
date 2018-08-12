@@ -87,19 +87,23 @@ class Dashboard extends Component{
 
                     <div className="dashboard-row row">
                         <div className="option-dashboard col-sm-12 col-md-6">
-                            <div className="linkTransform">
-                                <i className="icon-dashboard far fa-credit-card"/>
-                                <br/>
-                                Manage your credit
-                            </div>
+                            <Link to="/Credit">
+                                <div className="linkTransform">
+                                    <i className="icon-dashboard far fa-credit-card"/>
+                                    <br/>
+                                    <span className={"linkfix"}> Manage your credit </span>
+                                </div>
+                            </Link>
                         </div>
 
                         <div className="option-dashboard col-sm-12 col-md-6">
-                            <div className="linkTransform">
-                                <i className="icon-dashboard fas fa-money-bill-wave-alt"/>
-                                <br/>
-                                Send/Receive Money
-                            </div>
+                            <Link to="/Transfer">
+                                <div className="linkTransform">
+                                    <i className="icon-dashboard fas fa-money-bill-wave-alt"/>
+                                    <br/>
+                                    <span className={"linkfix"}> Send/Receive Money </span>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

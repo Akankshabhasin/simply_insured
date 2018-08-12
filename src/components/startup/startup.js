@@ -36,7 +36,9 @@ class Startup extends Component {
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         </ul>
-                        <button className="btn btn-outline-success my-2 my-sm-0 linkTransform" type="submit">Login</button>
+                        <Link to="/Login">
+                            <button className="btn btn-outline-success my-2 my-sm-0 linkTransform" type="submit">Login</button>
+                        </Link>
                     </div>
                 </nav>
 
@@ -46,7 +48,7 @@ class Startup extends Component {
                 <Page iconClass="fas fa-money-bill-wave" gradient="purple" heading={content.transferHead} description={content.transferCont}/>
                 <div className="contain green">
                     <div className="container">
-                        <Link to="/Dashboard">
+                        <Link to="/Login">
                             <button type="button" className="linkTransform custom-btn-startup btn btn-primary">Get Started!</button>
                         </Link>
                     </div>

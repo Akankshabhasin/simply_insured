@@ -59,7 +59,7 @@ class Credit extends Component{
                                     </li>
                                 </Link>
                             </ul>
-                            <Link to="/">
+                            <Link to={"/"}>
                                 <button onClick={this.props.logOut} className="btn btn-outline-success my-2 my-sm-0 linkTransform" type="submit">Logout</button>
                             </Link>
                         </div>

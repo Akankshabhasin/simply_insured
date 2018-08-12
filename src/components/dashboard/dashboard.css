@@ -23,8 +23,8 @@ html, body {
 }
 
 .icon-dashboard {
-    font-size: 80px;
-    color: #b2d9e7;
+    font-size: 80px !important;
+    color: #b2d9e7 !important;
 }
 
 .option-dashboard {
@@ -35,4 +35,9 @@ html, body {
 
 .dashboard-row {
     margin-top: 70px;
+}
+
+.link-fix {
+    color: #E0F7FA !important;
+
 }
