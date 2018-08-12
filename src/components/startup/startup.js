@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import  content from './content'
 import './startup.css'
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 const Page = ({iconClass, offset, imageUrl, heading, description, gradient }) => (
     <div className={`contain ${gradient}`}>
@@ -35,7 +36,9 @@ class Startup extends Component {
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         </ul>
-                        <button className="btn btn-outline-success my-2 my-sm-0 linkTransform" type="submit">Login</button>
+                        <Link to="/Login">
+                            <button className="btn btn-outline-success my-2 my-sm-0 linkTransform" type="submit">Login</button>
+                        </Link>
                     </div>
                 </nav>
 
@@ -45,7 +48,9 @@ class Startup extends Component {
                 <Page iconClass="fas fa-money-bill-wave" gradient="purple" heading={content.transferHead} description={content.transferCont}/>
                 <div className="contain green">
                     <div className="container">
-                        <button type="button" className="linkTransform custom-btn btn btn-primary">Get Started!</button>
+                        <Link to="/Login">
+                            <button type="button" className="linkTransform custom-btn-startup btn btn-primary">Get Started!</button>
+                        </Link>
                     </div>
                 </div>
             </div>
