@@ -14,5 +14,5 @@ The user with the address can deposit and request ether from the bank.
 
 Each user's account possess a credit limit, credit score and credit balance. The user can request credit within the range of 
 (credit limit - current credit). Each time users delays the payment of depositing back the ether, the user will be fined with 
-1 extra ETHER for the deposit.
+1 extra ETHER monthly.
 
